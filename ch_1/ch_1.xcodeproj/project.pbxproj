@@ -13,6 +13,11 @@
 		8D1F1FF4277640A1009C44F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F1FF2277640A1009C44F0 /* Main.storyboard */; };
 		8D1F1FF6277640A2009C44F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F1FF5277640A2009C44F0 /* Assets.xcassets */; };
 		8D1F1FF9277640A2009C44F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F1FF7277640A2009C44F0 /* LaunchScreen.storyboard */; };
+		8D2FD488277B5FBA008D0CC4 /* WeatherBG_Blood.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD485277B5FB9008D0CC4 /* WeatherBG_Blood.png */; };
+		8D2FD489277B5FBA008D0CC4 /* WeatherBG_Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD486277B5FB9008D0CC4 /* WeatherBG_Sun.png */; };
+		8D2FD48A277B5FBA008D0CC4 /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD487277B5FB9008D0CC4 /* WeatherBG_Moon.png */; };
+		8D2FD48D277B5FEB008D0CC4 /* weather_icon_rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD48B277B5FEB008D0CC4 /* weather_icon_rain.png */; };
+		8D2FD48E277B5FEB008D0CC4 /* weather_icon_sun_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD48C277B5FEB008D0CC4 /* weather_icon_sun_cloud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		8D1F1FF5277640A2009C44F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1F1FF8277640A2009C44F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1F1FFA277640A2009C44F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D2FD485277B5FB9008D0CC4 /* WeatherBG_Blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeatherBG_Blood.png; path = "../../../../../etc/auto-layout-study-image/WeatherBG_Blood.png"; sourceTree = "<group>"; };
+		8D2FD486277B5FB9008D0CC4 /* WeatherBG_Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeatherBG_Sun.png; path = "../../../../../etc/auto-layout-study-image/WeatherBG_Sun.png"; sourceTree = "<group>"; };
+		8D2FD487277B5FB9008D0CC4 /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeatherBG_Moon.png; path = "../../../../../etc/auto-layout-study-image/WeatherBG_Moon.png"; sourceTree = "<group>"; };
+		8D2FD48B277B5FEB008D0CC4 /* weather_icon_rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weather_icon_rain.png; path = "../../../../../etc/auto-layout-study-image/weather_icon_rain.png"; sourceTree = "<group>"; };
+		8D2FD48C277B5FEB008D0CC4 /* weather_icon_sun_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weather_icon_sun_cloud.png; path = "../../../../../etc/auto-layout-study-image/weather_icon_sun_cloud.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 		8D1F1FEB277640A1009C44F0 /* ch_1 */ = {
 			isa = PBXGroup;
 			children = (
+				8D2FD48B277B5FEB008D0CC4 /* weather_icon_rain.png */,
+				8D2FD48C277B5FEB008D0CC4 /* weather_icon_sun_cloud.png */,
+				8D2FD485277B5FB9008D0CC4 /* WeatherBG_Blood.png */,
+				8D2FD487277B5FB9008D0CC4 /* WeatherBG_Moon.png */,
+				8D2FD486277B5FB9008D0CC4 /* WeatherBG_Sun.png */,
 				8D1F1FEC277640A1009C44F0 /* AppDelegate.swift */,
 				8D1F1FEE277640A1009C44F0 /* SceneDelegate.swift */,
 				8D1F1FF0277640A1009C44F0 /* ViewController.swift */,
@@ -125,8 +140,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2FD48E277B5FEB008D0CC4 /* weather_icon_sun_cloud.png in Resources */,
+				8D2FD48A277B5FBA008D0CC4 /* WeatherBG_Moon.png in Resources */,
 				8D1F1FF9277640A2009C44F0 /* LaunchScreen.storyboard in Resources */,
 				8D1F1FF6277640A2009C44F0 /* Assets.xcassets in Resources */,
+				8D2FD488277B5FBA008D0CC4 /* WeatherBG_Blood.png in Resources */,
+				8D2FD48D277B5FEB008D0CC4 /* weather_icon_rain.png in Resources */,
+				8D2FD489277B5FBA008D0CC4 /* WeatherBG_Sun.png in Resources */,
 				8D1F1FF4277640A1009C44F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
