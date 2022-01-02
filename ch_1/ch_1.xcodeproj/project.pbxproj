@@ -18,6 +18,9 @@
 		8D2FD48A277B5FBA008D0CC4 /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD487277B5FB9008D0CC4 /* WeatherBG_Moon.png */; };
 		8D2FD48D277B5FEB008D0CC4 /* weather_icon_rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD48B277B5FEB008D0CC4 /* weather_icon_rain.png */; };
 		8D2FD48E277B5FEB008D0CC4 /* weather_icon_sun_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2FD48C277B5FEB008D0CC4 /* weather_icon_sun_cloud.png */; };
+		8DB7AFB22781EFE00054CE23 /* home50x50@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB7AFAF2781EFE00054CE23 /* home50x50@3x.png */; };
+		8DB7AFB32781EFE00054CE23 /* home300.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB7AFB02781EFE00054CE23 /* home300.png */; };
+		8DB7AFB42781EFE00054CE23 /* home50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB7AFB12781EFE00054CE23 /* home50x50@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		8D2FD487277B5FB9008D0CC4 /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeatherBG_Moon.png; path = "../../../../../etc/auto-layout-study-image/WeatherBG_Moon.png"; sourceTree = "<group>"; };
 		8D2FD48B277B5FEB008D0CC4 /* weather_icon_rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weather_icon_rain.png; path = "../../../../../etc/auto-layout-study-image/weather_icon_rain.png"; sourceTree = "<group>"; };
 		8D2FD48C277B5FEB008D0CC4 /* weather_icon_sun_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weather_icon_sun_cloud.png; path = "../../../../../etc/auto-layout-study-image/weather_icon_sun_cloud.png"; sourceTree = "<group>"; };
+		8DB7AFAF2781EFE00054CE23 /* home50x50@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home50x50@3x.png"; path = "../../../../../etc/auto-layout-study-image/home50x50@3x.png"; sourceTree = "<group>"; };
+		8DB7AFB02781EFE00054CE23 /* home300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home300.png; path = "../../../../../etc/auto-layout-study-image/home300.png"; sourceTree = "<group>"; };
+		8DB7AFB12781EFE00054CE23 /* home50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home50x50@2x.png"; path = "../../../../../etc/auto-layout-study-image/home50x50@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 		8D1F1FEB277640A1009C44F0 /* ch_1 */ = {
 			isa = PBXGroup;
 			children = (
+				8DB7AFB12781EFE00054CE23 /* home50x50@2x.png */,
+				8DB7AFAF2781EFE00054CE23 /* home50x50@3x.png */,
+				8DB7AFB02781EFE00054CE23 /* home300.png */,
 				8D2FD48B277B5FEB008D0CC4 /* weather_icon_rain.png */,
 				8D2FD48C277B5FEB008D0CC4 /* weather_icon_sun_cloud.png */,
 				8D2FD485277B5FB9008D0CC4 /* WeatherBG_Blood.png */,
@@ -142,7 +151,10 @@
 			files = (
 				8D2FD48E277B5FEB008D0CC4 /* weather_icon_sun_cloud.png in Resources */,
 				8D2FD48A277B5FBA008D0CC4 /* WeatherBG_Moon.png in Resources */,
+				8DB7AFB22781EFE00054CE23 /* home50x50@3x.png in Resources */,
 				8D1F1FF9277640A2009C44F0 /* LaunchScreen.storyboard in Resources */,
+				8DB7AFB32781EFE00054CE23 /* home300.png in Resources */,
+				8DB7AFB42781EFE00054CE23 /* home50x50@2x.png in Resources */,
 				8D1F1FF6277640A2009C44F0 /* Assets.xcassets in Resources */,
 				8D2FD488277B5FBA008D0CC4 /* WeatherBG_Blood.png in Resources */,
 				8D2FD48D277B5FEB008D0CC4 /* weather_icon_rain.png in Resources */,
