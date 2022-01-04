@@ -10,11 +10,23 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var displayLabel: UILabel!
+    
     @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
+    @IBOutlet weak var btn5: UIButton!
+    @IBOutlet weak var btn6: UIButton!
+    @IBOutlet weak var btn7: UIButton!
+    @IBOutlet weak var btn8: UIButton!
+    @IBOutlet weak var btn9: UIButton!
+    @IBOutlet weak var btn10: UIButton!
+    @IBOutlet weak var btn11: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        displayLabel.text = ""
         // layer 라는 개념
         // cornerRadius 가장 자리 라운딩 처리
         displayLabel.layer.cornerRadius = 24
@@ -39,9 +51,24 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         // view가 화면에 다 그려지고 실행되는 함수
         btn1.layer.cornerRadius = btn1.bounds.width / 2
-        
+        btn2.layer.cornerRadius = btn2.bounds.width / 2
+        btn3.layer.cornerRadius = btn3.bounds.width / 2
+        btn4.layer.cornerRadius = btn4.bounds.width / 2
+        btn5.layer.cornerRadius = btn5.bounds.width / 2
+        btn6.layer.cornerRadius = btn6.bounds.width / 2
+        btn7.layer.cornerRadius = btn7.bounds.width / 2
+        btn8.layer.cornerRadius = btn8.bounds.width / 2
+        btn9.layer.cornerRadius = btn9.bounds.width / 2
+        btn10.layer.cornerRadius = btn10.bounds.height / 2
+        btn11.layer.cornerRadius = btn11.bounds.width / 2
         // 한가지 조건이 더 필요함, 모든 화면에서 버튼이 정사각형으로 보여야함
         // Aspect Ratio
+    }
+    
+    @IBAction func btnAction(_ sender: UIButton) {
+        if let hasLabel = sender.titleLabel {
+            displayLabel.text! += hasLabel.text!
+        }
     }
 }
 
