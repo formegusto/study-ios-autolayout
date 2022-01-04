@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ch_3_dynamic_font" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-lS-off">
+                                <rect key="frame" x="20" y="40.5" width="280" height="399"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-vc-lTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="399"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-Ib-9GH">
+                                        <rect key="frame" x="97.5" y="0.0" width="85" height="127.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forme Gusto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xL4-iH-dpY">
+                                        <rect key="frame" x="84" y="0.0" width="112" height="279.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발급자 : 금융결제원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="l0g-kC-APe">
+                                        <rect key="frame" x="84" y="0.0" width="112" height="379"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="은행 : 국민은행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7H6-Vh-3cE">
+                                        <rect key="frame" x="84" y="0.0" width="112" height="427"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만료일 : 2022-12-31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mjg-cH-OeN">
+                                        <rect key="frame" x="84" y="0.0" width="112" height="475"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="l0g-kC-APe" firstAttribute="centerX" secondItem="vA5-vc-lTF" secondAttribute="centerX" id="1Rs-b0-Wtx"/>
+                                    <constraint firstItem="eZj-Ib-9GH" firstAttribute="centerX" secondItem="vA5-vc-lTF" secondAttribute="centerX" id="2Pm-Ri-RXK"/>
+                                    <constraint firstItem="eZj-Ib-9GH" firstAttribute="top" secondItem="vA5-vc-lTF" secondAttribute="top" id="3ZA-i7-Lv4"/>
+                                    <constraint firstItem="7H6-Vh-3cE" firstAttribute="width" secondItem="vA5-vc-lTF" secondAttribute="width" multiplier="0.4" id="4ag-YR-B1M"/>
+                                    <constraint firstAttribute="bottom" secondItem="vA5-vc-lTF" secondAttribute="bottom" id="8Gr-bx-YkM"/>
+                                    <constraint firstItem="l0g-kC-APe" firstAttribute="width" secondItem="vA5-vc-lTF" secondAttribute="width" multiplier="0.4" id="9Uu-UW-TeY"/>
+                                    <constraint firstItem="Mjg-cH-OeN" firstAttribute="width" secondItem="vA5-vc-lTF" secondAttribute="width" multiplier="0.4" id="Atm-md-eE9"/>
+                                    <constraint firstItem="eZj-Ib-9GH" firstAttribute="width" secondItem="vA5-vc-lTF" secondAttribute="width" multiplier="0.3" constant="1" id="GzM-40-Nbc"/>
+                                    <constraint firstItem="xL4-iH-dpY" firstAttribute="width" secondItem="vA5-vc-lTF" secondAttribute="width" multiplier="0.4" id="HLs-jx-fhP"/>
+                                    <constraint firstItem="7H6-Vh-3cE" firstAttribute="leading" secondItem="l0g-kC-APe" secondAttribute="leading" id="HYN-Db-8VS"/>
+                                    <constraint firstItem="Mjg-cH-OeN" firstAttribute="bottom" secondItem="vA5-vc-lTF" secondAttribute="bottom" multiplier="1.19" id="UZE-EV-cvC"/>
+                                    <constraint firstItem="7H6-Vh-3cE" firstAttribute="bottom" secondItem="vA5-vc-lTF" secondAttribute="bottom" multiplier="1.07" id="V8J-t7-WSm"/>
+                                    <constraint firstItem="l0g-kC-APe" firstAttribute="top" secondItem="vA5-vc-lTF" secondAttribute="top" id="XaB-rZ-j1k"/>
+                                    <constraint firstItem="xL4-iH-dpY" firstAttribute="top" secondItem="vA5-vc-lTF" secondAttribute="top" id="Xx3-2p-CXb"/>
+                                    <constraint firstItem="Mjg-cH-OeN" firstAttribute="top" secondItem="vA5-vc-lTF" secondAttribute="top" id="Z33-VP-Nkz"/>
+                                    <constraint firstItem="vA5-vc-lTF" firstAttribute="leading" secondItem="kQm-lS-off" secondAttribute="leading" id="a6Y-G7-R1c"/>
+                                    <constraint firstItem="7H6-Vh-3cE" firstAttribute="top" secondItem="vA5-vc-lTF" secondAttribute="top" id="ahH-S0-LU1"/>
+                                    <constraint firstItem="xL4-iH-dpY" firstAttribute="centerX" secondItem="vA5-vc-lTF" secondAttribute="centerX" id="duc-Zw-2Tq"/>
+                                    <constraint firstItem="eZj-Ib-9GH" firstAttribute="bottom" secondItem="vA5-vc-lTF" secondAttribute="bottom" multiplier="0.32" id="f7J-Tg-zEi"/>
+                                    <constraint firstAttribute="width" secondItem="kQm-lS-off" secondAttribute="height" multiplier="1009:1438" id="jaA-j6-Zy3"/>
+                                    <constraint firstAttribute="trailing" secondItem="vA5-vc-lTF" secondAttribute="trailing" id="kiP-lG-GbI"/>
+                                    <constraint firstItem="xL4-iH-dpY" firstAttribute="bottom" secondItem="vA5-vc-lTF" secondAttribute="bottom" multiplier="0.7" id="oOZ-SO-RsU"/>
+                                    <constraint firstItem="Mjg-cH-OeN" firstAttribute="leading" secondItem="l0g-kC-APe" secondAttribute="leading" id="re4-zr-Kwn"/>
+                                    <constraint firstItem="l0g-kC-APe" firstAttribute="bottom" secondItem="vA5-vc-lTF" secondAttribute="bottom" multiplier="0.95" id="s5q-Vz-xfd"/>
+                                    <constraint firstItem="vA5-vc-lTF" firstAttribute="top" secondItem="kQm-lS-off" secondAttribute="top" id="ubJ-mu-qIw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kQm-lS-off" secondAttribute="trailing" constant="20" id="HpJ-xa-3Wa"/>
+                            <constraint firstItem="kQm-lS-off" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pc7-Na-hZd"/>
+                            <constraint firstItem="kQm-lS-off" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xVn-VK-eeL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.923076923076923" y="109.47867298578198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cert_BG.PNG" width="1009" height="1438"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
