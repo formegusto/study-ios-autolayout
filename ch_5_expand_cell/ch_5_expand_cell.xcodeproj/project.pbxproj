@@ -13,6 +13,7 @@
 		8D2DC268278828F000808E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2DC266278828F000808E58 /* Main.storyboard */; };
 		8D2DC26A278828F100808E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D2DC269278828F100808E58 /* Assets.xcassets */; };
 		8D2DC26D278828F100808E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2DC26B278828F100808E58 /* LaunchScreen.storyboard */; };
+		8D2DC2752788293B00808E58 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2DC2742788293B00808E58 /* girl.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8D2DC269278828F100808E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D2DC26C278828F100808E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D2DC26E278828F100808E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D2DC2742788293B00808E58 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = girl.png; path = "../../../../../etc/auto-layout-study-image/girl.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8D2DC269278828F100808E58 /* Assets.xcassets */,
 				8D2DC26B278828F100808E58 /* LaunchScreen.storyboard */,
 				8D2DC26E278828F100808E58 /* Info.plist */,
+				8D2DC2742788293B00808E58 /* girl.png */,
 			);
 			path = ch_5_expand_cell;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2DC26D278828F100808E58 /* LaunchScreen.storyboard in Resources */,
+				8D2DC2752788293B00808E58 /* girl.png in Resources */,
 				8D2DC26A278828F100808E58 /* Assets.xcassets in Resources */,
 				8D2DC268278828F000808E58 /* Main.storyboard in Resources */,
 			);
