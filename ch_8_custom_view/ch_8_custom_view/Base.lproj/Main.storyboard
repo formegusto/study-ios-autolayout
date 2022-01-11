@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ch_8_custom_view" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="ac2-xt-PCA" customClass="DiagonalCustomImageView" customModule="ch_8_custom_view" customModuleProvider="target">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="p7j-Fd-FCE"/>
+                                    <constraint firstAttribute="height" constant="250" id="un5-qP-l0e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerHeight">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Anybody Out There?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xc-jU-1nV">
+                                <rect key="frame" x="82" y="558" width="133" height="15"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4C-yT-WSI">
+                                <rect key="frame" x="158.5" y="593" width="97" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="View Cover"/>
+                                <connections>
+                                    <action selector="viewCover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q47-TG-hTY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ac2-xt-PCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="10N-SR-mJP"/>
+                            <constraint firstItem="ac2-xt-PCA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5xC-yB-bQY"/>
+                            <constraint firstItem="8xc-jU-1nV" firstAttribute="leading" secondItem="ac2-xt-PCA" secondAttribute="leading" id="K0f-eg-uRY"/>
+                            <constraint firstItem="T4C-yT-WSI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eqm-xg-ibK"/>
+                            <constraint firstItem="T4C-yT-WSI" firstAttribute="top" secondItem="ac2-xt-PCA" secondAttribute="bottom" constant="20" id="lGS-Sp-otF"/>
+                            <constraint firstItem="8xc-jU-1nV" firstAttribute="bottom" secondItem="ac2-xt-PCA" secondAttribute="bottom" id="nUp-pY-teS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cover" destination="ac2-xt-PCA" id="4LL-Kt-10w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="ac2-xt-PCA">
+            <size key="intrinsicContentSize" width="1242" height="2208"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="night_sky.png" width="1242" height="2208"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
