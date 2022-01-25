@@ -15,11 +15,17 @@ class ViewController: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.separatorStyle = .none
+            
         }
     }
     var chatDatas = [String]()
     
-    @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var inputTextView: UITextView! {
+        didSet {
+            inputTextView.delegate = self
+        }
+    }
+    @IBOutlet weak var inputTextViewHeight: NSLayoutConstraint!
     @IBOutlet weak var inputTextViewBottom: NSLayoutConstraint!
     
     override func viewDidLoad() {
@@ -69,15 +75,36 @@ class ViewController: UIViewController {
         
         chatDatas.append(hasText)
         inputTextView.text = ""
+        // 테이블 뷰가 전체 리로드 되는 개념이라,
+        // 기기 성능이 떨어지면 좋지 않을 수 있다.
+        // 그래서 insertRow를 사용해서, 해당 로우만 갱신되도록 한다.
         // tableView.reloadData()
-        
         
         let lastIndexPath = IndexPath(row: chatDatas.count - 1, section: 0)
         tableView.insertRows(at: [lastIndexPath], with: .automatic)
         tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
+        
+        self.inputTextViewHeight.constant = 40
     
     }
 
+}
+
+extension ViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        // ScrollView와 같은 개념으로,
+        // 안쪽의 영역을 컨텐츠라고 한다.
+        let contentHeight = textView.contentSize.height
+        
+        if contentHeight <= 40 {
+            self.inputTextViewHeight.constant = 40
+        } else if  contentHeight >= 100{
+            self.inputTextViewHeight.constant = 100
+        } else {
+            self.inputTextViewHeight.constant = contentHeight
+        }
+        
+    }
 }
 
 extension ViewController: UITableViewDelegate {
@@ -94,12 +121,14 @@ extension ViewController: UITableViewDataSource {
             let myCell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! MyCell
             
             myCell.textView.text = chatDatas[indexPath.row]
+            myCell.selectionStyle = .none
             
             return myCell
         } else {
             let urCell = tableView.dequeueReusableCell(withIdentifier: "YourCell") as! UrCell
             
             urCell.textView.text = chatDatas[indexPath.row]
+            urCell.selectionStyle = .none
             
             return urCell
         }
